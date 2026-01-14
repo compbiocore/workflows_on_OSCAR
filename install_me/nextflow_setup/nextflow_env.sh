@@ -20,7 +20,7 @@ fi
 
 # change .bashrc to make it more user-friendly 
 if [ ! -f "$HOME/.nextflow_specific_aliases" ]; then touch ~/.nextflow_specific_aliases; fi 
-echo 'nextflow_start () { module load openjdk/11.0.17_8-nw5ylvi && source ~/nextflow_env_${USER}/bin/activate; }' >> $HOME/.nextflow_specific_aliases 
+echo 'nextflow_start () { module load openjdk/11.0.23_9-7cjq && source ~/nextflow_env_${USER}/bin/activate; }' >> $HOME/.nextflow_specific_aliases 
 echo 'remove_nexflow () { rm -rf ~/nextflow_env_${USER} ~/.nextflow ~/nextflow_setup ~/.nextflow_specific_aliases; unset -f nextflow_start; unset -f remove_nextflow; }' >> $HOME/.nextflow_specific_aliases 
 echo 'export -f nextflow_start' >> $HOME/.nextflow_specific_aliases 
 echo 'export -f remove_nexflow' >> $HOME/.nextflow_specific_aliases 
