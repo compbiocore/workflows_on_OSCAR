@@ -16,7 +16,7 @@ if [ ! -x "$env_dir/bin/snakemake" ]; then
     source "$env_dir/bin/activate"
 
     python -m pip install --upgrade pip setuptools wheel
-    python -m pip install "snakemake==7.32.4"
+    python -m pip install "snakemake==7.32.4" "pulp==2.7.0"
 
     mkdir -p ~/.config/snakemake
     mkdir -p ~/snakemake_folders/snake_error_log
