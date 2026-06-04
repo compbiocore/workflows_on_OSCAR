@@ -25,7 +25,7 @@ fi
 
 # change .bashrc to make it more user-friendly 
 if [ ! -f "$HOME/.snakemake_specific_aliases" ]; then touch ~/.snakemake_specific_aliases; fi 
-echo 'snakemake_start () { module load python/3.9.16s-x3wdtvt && source ~/snakemake_env_${USER}/bin/activate; }' >> $HOME/.snakemake_specific_aliases
+echo 'snakemake_start () { module load python/3.9.23s-gwnt && source ~/snakemake_env_${USER}/bin/activate; }' >> $HOME/.snakemake_specific_aliases
 echo 'snakemake_remove () { rm -rf ~/snakemake_env_${USER} ~/snakemake_setup ~/.snakemake_specific_aliases ~/.config/snakemake ~/snakemake_folders; unset -f snakemake_start; unset -f snakemake_remove; }' >> $HOME/.snakemake_specific_aliases 
 echo 'export -f snakemake_start' >> $HOME/.snakemake_specific_aliases 
 echo 'export -f snakemake_remove' >> $HOME/.snakemake_specific_aliases
